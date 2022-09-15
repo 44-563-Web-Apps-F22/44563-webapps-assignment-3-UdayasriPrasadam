@@ -49,5 +49,25 @@
             <td>1 day</td>
          </tr>
         </table>
+        <hr>
+        <h3>Code display</h3>
+        <blockquote cite="https://stackoverflow.com/questions/73724200/options-not-working-on-new-browser-window-in-electron"> Options not working on new browser window in electron</blockquote >
+        <a href = "https://stackoverflow.com/questions/73724200/options-not-working-on-new-browser-window-in-electron">Question link</a>
+        <pre>
+            <code>
+function randRange(data) {
+    var newTime = data[Math.floor(data.length * Math.random())];
+    return newTime;
+  }         
+function toggleSomething() {
+    var timeArray = new Array(200, 300, 150, 250, 2000, 3000, 1000, 1500);
+    // do stuff, happens to use jQuery here (nothing else does)
+    $("#box").toggleClass("visible");
+    clearInterval(timer);
+    timer = setInterval(toggleSomething, randRange(timeArray));
+}
+var timer = setInterval(toggleSomething, 1000);
+            </code>
+        </pre>
 </body>
 </html>
